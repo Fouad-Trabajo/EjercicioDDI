@@ -7,53 +7,40 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="5"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_gravity="end"
-    android:layout_height="wrap_content">
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </SearchView>
-</LinearLayout>
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:text="Destacados"
+            android:textStyle="bold"></TextView>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_gravity="bottom"
+            android:layout_weight="5"
+            android:text="Compra por categoría"
+            android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:text="Destacados"
-                android:textStyle="bold"></TextView>
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="40dp"
-                android:text="Compra por categoría"
-                android:textStyle="bold"></TextView>
+        </SearchView>
 
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_weight="5"
         android:orientation="horizontal">
 
         <!-- Layout izquierdo del texto -->
@@ -61,62 +48,63 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#d4d4d4"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_weight="1"
                 android:text="Hogar y cocina"></TextView>
 
             <TextView
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_weight="1"
                 android:text="Ropa de mujer"></TextView>
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_weight="1"
                 android:text="Tallas Plus Para Mujer"></TextView>
 
             <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_weight="1"
                 android:text="Zapatos de mujer"></TextView>
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_weight="1"
                 android:text="Lencería y pijamas de mujer"></TextView>
 
             <TextView
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_weight="1"
                 android:text="Ropa de hombre"></TextView>
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_weight="1"
                 android:text="Calzado de hombre"></TextView>
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_weight="1"
                 android:text="Tallas grandes de hombre"></TextView>
 
         </LinearLayout>
@@ -129,54 +117,54 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Maquillaje"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="vestidos de mujer"></TextView>
+                android:text="Vestidos de mujer"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="Cuidado personal"></TextView>
+                android:text="Cuyidado personal"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Ropa de hombre"></TextView>
         </LinearLayout>
@@ -188,56 +176,56 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Blusas y camisas de mujer"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Herramientas de belleza"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Tops de hombre"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="Accesorios De Ejercicio y Fitness"></TextView>
+                android:text="Accesorioas de ejercicio y fitness"></TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -247,54 +235,54 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Pantalones de mujer"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Cuidado del cabello"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Conjuntos de hombres"></TextView>
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 tools:src="@tools:sample/avatars"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="Juguetes electrónicos"></TextView>
         </LinearLayout>
