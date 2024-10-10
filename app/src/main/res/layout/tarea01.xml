@@ -17,7 +17,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="2"
             android:text="Destacados"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="0dp"
@@ -25,7 +25,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="5"
             android:text="Compra por categoría"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"/>
 
         <SearchView
             android:layout_width="wrap_content"
