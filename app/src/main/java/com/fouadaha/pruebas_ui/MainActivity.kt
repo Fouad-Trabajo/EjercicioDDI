@@ -12,7 +12,7 @@ import android.view.MenuItem
 import com.fouadaha.pruebas_ui.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+/*
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
@@ -56,4 +56,6 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+ */
 }
