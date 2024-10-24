@@ -92,18 +92,6 @@
             app:layout_constraintTop_toBottomOf="@id/text_1"
             tools:ignore="MissingConstraints" />
 
-        <!--
-                <Button
-                    android:id="@+id/icon_button_star1"
-                    style="?attr/materialIconButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    app:icon="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-                    app:layout_constraintTop_toBottomOf="@id/text_2"
-                    app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-                    tools:ignore="MissingConstraints" />
-        -->
         <RatingBar
             android:id="@+id/stars"
             style="?android:attr/ratingBarStyleIndicator"
