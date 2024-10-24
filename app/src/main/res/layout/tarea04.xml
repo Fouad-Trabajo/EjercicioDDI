@@ -9,16 +9,16 @@
     <com.google.android.material.search.SearchBar
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_height="wrap_content"
-        android:text="Introduce texto" />
+        android:text="Introduce texto"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_1"
         android:layout_width="450dp"
         android:layout_height="450dp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editText"
         tools:ignore="MissingConstraints"
@@ -44,6 +44,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#82D6EF"
         app:icon="@drawable/favorite_24dp_000000_fill0_wght400_grad0_opsz24"
+        app:layout_constraintCircle="@id/image_1"
+        app:layout_constraintCircleAngle="160"
+        app:layout_constraintCircleRadius="250dp"
         app:layout_constraintEnd_toStartOf="@id/icon_button_share"
         app:layout_constraintTop_toBottomOf="@id/image_1"
         tools:ignore="MissingConstraints" />
@@ -55,7 +58,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#82D6EF"
         app:icon="@drawable/share_24dp_000000_fill1_wght400_grad0_opsz24"
-
+        app:layout_constraintCircle="@id/image_1"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="270dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_1"
         tools:ignore="MissingConstraints" />
@@ -99,56 +104,18 @@
                     app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
                     tools:ignore="MissingConstraints" />
         -->
-        <CheckBox
-            android:id="@+id/icon_button_star1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:button="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:buttonTint="#FDB207"
-            app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
+        <RatingBar
+            android:id="@+id/stars"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:numStars="5"
+            android:progressTint="#FDB207"
+            android:rating="5"
+            android:stepSize="0.5"
             app:layout_constraintTop_toBottomOf="@id/text_2"
             tools:ignore="MissingConstraints" />
-
-        <CheckBox
-            android:id="@+id/icon_button_star2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:button="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:buttonTint="#FDB207"
-            app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:layout_constraintStart_toEndOf="@id/icon_button_star1"
-            app:layout_constraintTop_toTopOf="@id/icon_button_star1" />
-
-        <CheckBox
-            android:id="@+id/icon_button_star3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:button="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:buttonTint="#FDB207"
-            app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:layout_constraintStart_toEndOf="@id/icon_button_star2"
-            app:layout_constraintTop_toTopOf="@id/icon_button_star1" />
-
-        <CheckBox
-            android:id="@+id/icon_button_star4"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:button="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:buttonTint="#FDB207"
-            app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:layout_constraintStart_toEndOf="@id/icon_button_star3"
-            app:layout_constraintTop_toTopOf="@id/icon_button_star1" />
-
-
-        <CheckBox
-            android:id="@+id/icon_button_star5"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:button="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:buttonTint="#FDB207"
-            app:iconSize="@drawable/star_24dp_ffff55_fill1_wght400_grad0_opsz24"
-            app:layout_constraintStart_toEndOf="@id/icon_button_star4"
-            app:layout_constraintTop_toTopOf="@id/icon_button_star1" />
 
         <TextView
             android:id="@+id/text_3"
@@ -156,8 +123,8 @@
             android:layout_height="wrap_content"
             android:text="1 Opiniones"
             android:textSize="15sp"
-            app:layout_constraintStart_toEndOf="@id/icon_button_star5"
-            app:layout_constraintTop_toTopOf="@id/icon_button_star1"
+            app:layout_constraintStart_toEndOf="@id/stars"
+            app:layout_constraintTop_toTopOf="@id/stars"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -165,10 +132,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="74,90€"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/icon_button_star1"/>
+            app:layout_constraintTop_toBottomOf="@id/stars" />
 
         <ImageView
             android:id="@+id/icon_lock"
@@ -177,7 +144,7 @@
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_4"
-            app:srcCompat="@drawable/lock_24dp_ffffff_fill1_wght400_grad0_opsz24"/>
+            app:srcCompat="@drawable/lock_24dp_ffffff_fill1_wght400_grad0_opsz24" />
 
         <TextView
             android:id="@+id/text_5"
@@ -204,10 +171,10 @@
             android:id="@+id/text_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:text="En stock"
             android:textColor="#82D6EF"
             android:textSize="15sp"
-            android:layout_marginTop="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_4"
             tools:ignore="MissingConstraints" />
