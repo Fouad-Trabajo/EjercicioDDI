@@ -34,8 +34,7 @@
         android:backgroundTint="#82D6EF"
         app:icon="@drawable/baseline_arrow_back_ios_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/image_1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@id/image_1"/>
 
     <Button
         android:id="@+id/icon_button_favorite"
@@ -48,8 +47,7 @@
         app:layout_constraintCircleAngle="160"
         app:layout_constraintCircleRadius="250dp"
         app:layout_constraintEnd_toStartOf="@id/icon_button_share"
-        app:layout_constraintTop_toBottomOf="@id/image_1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/image_1" />
 
     <Button
         android:id="@+id/icon_button_share"
@@ -62,15 +60,13 @@
         app:layout_constraintCircleAngle="150"
         app:layout_constraintCircleRadius="270dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/image_1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/icon_button_favorite">
 
         <TextView
@@ -150,6 +146,7 @@
             style="?attr/materialIconButtonFilledStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="Check"
             app:layout_constraintEnd_toStartOf="@id/text_6"
             app:layout_constraintTop_toBottomOf="@id/text_4"
             app:srcCompat="@drawable/baseline_check_circle_24" />
@@ -166,6 +163,7 @@
             app:layout_constraintTop_toBottomOf="@id/text_4" />
 
         <Button
+            android:id="@+id/button_select_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
